@@ -25,6 +25,18 @@ yearly_electricity = 12 * (salary * electricity / 100)
 print("your total yearly expenses on rent and electricity: ", yearly_rent + yearly_electricity)
 
 #calculate salary ^2
-salay_squared = salary ** 2
-print("your salary squared is: ", salay_squared)
+salary_squared = salary ** 2
+print("your salary squared is: ", salary_squared)
 
+#calculate total savings
+additional_savings = float(input("enter additional savings: "))
+total_savings = (salary * savings / 100) + additional_savings 
+
+if total_savings > 0:  
+    remaining_amount = (additional_savings / total_savings) * 100 
+else:
+    remaining_amount = 0  
+
+#print total savings and remaining amount
+print("your total savings (including additional savings): ", total_savings)
+print("remaining amount as percentage of total savings: ", remaining_amount, "%")
