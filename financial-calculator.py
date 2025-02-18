@@ -19,3 +19,7 @@ print ("your total expenses for the month of ", month_name, " is: ", total_expen
 remainder = salary - total_expenses
 print("your remainder for the month of ", month_name, " is: ", remainder)
 
+#calculate yearly expenses on rent and electricity
+yearly_rent = 12 * (salary * rent / 100)
+yearly_electricity = 12 * (salary * electricity / 100)
+print("your total yearly expenses on rent and electricity: ", yearly_rent + yearly_electricity)
