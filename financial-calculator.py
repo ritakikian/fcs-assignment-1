@@ -10,3 +10,12 @@ print("your salary for the month of ", month_name, " is: ", salary)
 print("your savings for the month of ", month_name, " is: ", salary * savings / 100)
 print("your rent for the month of ", month_name, " is: ", salary * rent / 100)
 print("your electricity for the month of ", month_name, " is: ", salary * electricity / 100)
+
+#calculate the total expenses
+total_expenses = (salary * savings / 100) + (salary * rent / 100) + (salary * electricity / 100)
+print ("your total expenses for the month of ", month_name, " is: ", total_expenses)
+
+#calculate the remainder after expenses
+remainder = salary - total_expenses
+print("your remainder for the month of ", month_name, " is: ", remainder)
+
